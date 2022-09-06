@@ -5,6 +5,10 @@ SRCS =  \
 		srcs/ft_vector/ft_vector_pop_back.c \
 		srcs/ft_vector/ft_vector_push_back.c \
 		srcs/ft_vector/ft_vector_reserve.c \
+		srcs/ft_stack/ft_stack_delete.c \
+		srcs/ft_stack/ft_stack_new.c \
+		srcs/ft_stack/ft_stack_pop.c \
+		srcs/ft_stack/ft_stack_push.c \
 
 LIBS =	\
 		-lft \
