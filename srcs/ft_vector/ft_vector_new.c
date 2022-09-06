@@ -21,7 +21,7 @@ t_ftvector	*ft_vector_new(size_t data_size, size_t capacity)
 	this = malloc(sizeof(t_ftvector));
 	if (!this)
 		return (NULL);
-	if (capacity == -1)
+	if (capacity == (size_t)-1)
 		capacity = DEFAULT_CAPACITY;
 	this->data = malloc(data_size * capacity);
 	if (!this->data)

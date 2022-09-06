@@ -24,7 +24,7 @@ t_bool	ft_vector_push_back(t_ftvector *this, void *value)
 	data_size = this->_data_size;
 	ft_memcpy(
 		((char *)this->data) + this->size * data_size,
-		&value, data_size);
+		value, data_size);
 	this->size++;
 	return (1);
 }

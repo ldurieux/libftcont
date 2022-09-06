@@ -14,16 +14,7 @@
 
 void	*ft_vector_pop_back(t_ftvector *this)
 {
-	void	*res;
-	size_t	data_size;
-
 	if (!this || this->size == 0)
 		return (NULL);
-	res = malloc(this->_data_size);
-	if (!res)
-		return (NULL);
-	data_size = this->_data_size;
-	this->size--;
-	ft_memcpy(res, ((char *)this->data + data_size * this->size), data_size);
-	return (res);
+	return (((char *)this->data) + this->_data_size * this->size);
 }
