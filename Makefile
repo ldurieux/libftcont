@@ -1,5 +1,10 @@
 SRCS =  \
 		main.c \
+		srcs/ft_vector/ft_vector_delete.c \
+		srcs/ft_vector/ft_vector_new.c \
+		srcs/ft_vector/ft_vector_pop_back.c \
+		srcs/ft_vector/ft_vector_push_back.c \
+		srcs/ft_vector/ft_vector_reserve.c \
 
 LIBS =	\
 		-lft \
