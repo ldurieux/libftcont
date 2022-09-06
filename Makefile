@@ -9,6 +9,10 @@ SRCS =  \
 		srcs/ft_stack/ft_stack_new.c \
 		srcs/ft_stack/ft_stack_pop.c \
 		srcs/ft_stack/ft_stack_push.c \
+		srcs/ft_queue/ft_queue_delete.c \
+		srcs/ft_queue/ft_queue_new.c \
+		srcs/ft_queue/ft_queue_pop.c \
+		srcs/ft_queue/ft_queue_push.c \
 
 LIBS =	\
 		-lft \
