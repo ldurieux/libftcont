@@ -6,7 +6,7 @@
 /*   By: ldurieux <ldurieux@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 20:29:14 by ldurieux          #+#    #+#             */
-/*   Updated: 2022/09/08 01:14:06 by ldurieux         ###   ########lyon.fr   */
+/*   Updated: 2022/09/08 01:18:38 by ldurieux         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ static void	iter_node_bucket(t_ftfrwlist *bucket, void (*f)(char *, void *))
 	while (list_node)
 	{
 		map_node = list_node->value;
-		f(mpa_node->key, map_node->value);
+		f(map_node->key, map_node->value);
 		list_node = list_node->next;
 	}
 }
