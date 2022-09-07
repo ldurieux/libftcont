@@ -13,6 +13,11 @@ SRCS =  \
 		srcs/ft_queue/ft_queue_new.c \
 		srcs/ft_queue/ft_queue_pop.c \
 		srcs/ft_queue/ft_queue_push.c \
+		srcs/ft_list/ft_list_at.c \
+		srcs/ft_list/ft_list_delete.c \
+		srcs/ft_list/ft_list_insert.c \
+		srcs/ft_list/ft_list_new.c \
+		srcs/ft_list/ft_list_remove.c \
 
 LIBS =	\
 		-lft \
