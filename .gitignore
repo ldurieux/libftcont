@@ -1,6 +1,7 @@
 main.c
 libftcont
 libftcont.a
+wrap.c
 
 *.o
 *.d

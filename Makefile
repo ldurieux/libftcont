@@ -1,5 +1,4 @@
 SRCS =  \
-		main.c \
 		srcs/ft_vector/ft_vector_delete.c \
 		srcs/ft_vector/ft_vector_new.c \
 		srcs/ft_vector/ft_vector_pop_back.c \
@@ -49,7 +48,7 @@ DEPS		= ${SRCS:.c=.d}
 CC			= gcc
 CCFLAGS		= -Wall -Wextra -g
 DEPSFLAGS	= -MMD -MP
-NAME		= libftcont
+NAME		= libftcont.a
 RM			= rm -f
 MAKE		= make -C
 WRAP		= 
@@ -59,7 +58,8 @@ AR_FLAGS	= rc
 .PHONY: all clean fclean re
 
 $(NAME) : $(LIB_PATHS) $(OBJS)
-		$(CC) $(WRAP) $(CCFLAGS) -I$(HEADERS) $(LIB_HEADERS) -o $@ $(OBJS) $(LIB_LD) $(LIBS)
+		$(AR) $(AR_FLAGS) $@ $(OBJS)
+		#$(CC) $(WRAP) $(CCFLAGS) -I$(HEADERS) $(LIB_HEADERS) -o $@ $(OBJS) $(LIB_LD) $(LIBS)
 
 $(LIB_PATHS) :
 		$(MAKE) $(notdir $(basename $@))
