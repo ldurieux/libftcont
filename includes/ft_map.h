@@ -6,7 +6,7 @@
 /*   By: ldurieux <ldurieux@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 20:12:33 by ldurieux          #+#    #+#             */
-/*   Updated: 2022/09/07 20:12:34 by ldurieux         ###   ########lyon.fr   */
+/*   Updated: 2022/09/08 01:11:40 by ldurieux         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ t_ftmap_node	*ft_map_find_node(t_ftmap *this, const char *key);
 void			*ft_map_find(t_ftmap *this, const char *key);
 
 void			ft_map_iter(t_ftmap *this, void (*f)(void *));
+void			ft_map_iter_node(t_ftmap *this, void (*f)(char *, void *));
 
 //NOLINTBEGIN(readability-magic-numbers)
 static inline t_uint64	ft_map_hash(const char *key)
