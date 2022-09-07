@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_vector_new.c                                    :+:      :+:    :+:   */
+/*   ft_stack_iter.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ldurieux <ldurieux@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/06 19:10:33 by ldurieux          #+#    #+#             */
-/*   Updated: 2022/09/06 19:10:34 by ldurieux         ###   ########lyon.fr   */
+/*   Created: 2022/09/07 20:29:16 by ldurieux          #+#    #+#             */
+/*   Updated: 2022/09/07 20:29:21 by ldurieux         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_vector.h"
+#include "ft_stack.h"
 
-#define DEFAULT_CAPACITY	50
-
-t_ftvector	*ft_vector_new(size_t data_size, size_t capacity)
+void	ft_stack_iter(t_ftstack *this, void (*f)(void *))
 {
-	t_ftvector	*this;
+	t_ftstack_node	*node;
 
-	this = malloc(sizeof(t_ftvector));
 	if (!this)
-		return (NULL);
-	if (capacity == 0)
-		capacity = DEFAULT_CAPACITY;
-	this->data = malloc(data_size * capacity);
-	if (!this->data)
+		return ;
+	node = this->top;
+	while (node)
 	{
-		free(this);
-		return (NULL);
+		f(node->value);
+		node = node->prev;
 	}
-	this->size = 0;
-	this->_data_size = data_size;
-	this->_capacity = capacity;
-	return (this);
 }

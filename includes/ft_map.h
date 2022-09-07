@@ -40,6 +40,8 @@ void			*ft_map_remove(t_ftmap *this, const char *key);
 t_ftmap_node	*ft_map_find_node(t_ftmap *this, const char *key);
 void			*ft_map_find(t_ftmap *this, const char *key);
 
+void			ft_map_iter(t_ftmap *this, void (*f)(void *));
+
 //NOLINTBEGIN(readability-magic-numbers)
 static inline t_uint64	ft_map_hash(const char *key)
 {

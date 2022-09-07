@@ -9,20 +9,30 @@ SRCS =  \
 		srcs/ft_stack/ft_stack_new.c \
 		srcs/ft_stack/ft_stack_pop.c \
 		srcs/ft_stack/ft_stack_push.c \
+		srcs/ft_stack/ft_stack_iter.c \
 		srcs/ft_queue/ft_queue_delete.c \
 		srcs/ft_queue/ft_queue_new.c \
 		srcs/ft_queue/ft_queue_pop.c \
 		srcs/ft_queue/ft_queue_push.c \
+		srcs/ft_queue/ft_queue_iter.c \
 		srcs/ft_list/ft_list_at.c \
 		srcs/ft_list/ft_list_delete.c \
 		srcs/ft_list/ft_list_insert.c \
 		srcs/ft_list/ft_list_new.c \
 		srcs/ft_list/ft_list_remove.c \
+		srcs/ft_list/ft_list_iter.c \
 		srcs/ft_frwlist/ft_frwlist_at.c \
 		srcs/ft_frwlist/ft_frwlist_delete.c \
 		srcs/ft_frwlist/ft_frwlist_insert.c \
 		srcs/ft_frwlist/ft_frwlist_new.c \
 		srcs/ft_frwlist/ft_frwlist_remove.c \
+		srcs/ft_frwlist/ft_frwlist_iter.c \
+		srcs/ft_map/ft_map_delete.c \
+		srcs/ft_map/ft_map_find.c \
+		srcs/ft_map/ft_map_insert.c \
+		srcs/ft_map/ft_map_new.c \
+		srcs/ft_map/ft_map_remove.c \
+		srcs/ft_map/ft_map_iter.c \
 
 LIBS =	\
 		-lft \

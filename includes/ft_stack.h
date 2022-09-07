@@ -33,4 +33,6 @@ void		ft_stack_delete(t_ftstack *this);
 t_bool		ft_stack_push(t_ftstack *this, void *value);
 void		*ft_stack_pop(t_ftstack *this);
 
+void		ft_stack_iter(t_ftstack *this, void (*f)(void *));
+
 #endif // FT_STACK_H

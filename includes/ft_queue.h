@@ -34,4 +34,6 @@ void		ft_queue_delete(t_ftqueue *this);
 t_bool		ft_queue_push(t_ftqueue *this, void *value);
 void		*ft_queue_pop(t_ftqueue *this);
 
+void		ft_queue_iter(t_ftqueue *this, void (*f)(void *));
+
 #endif // FT_QUEUE_H

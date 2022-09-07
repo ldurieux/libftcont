@@ -42,4 +42,6 @@ void			*ft_list_pop_back(t_ftlist *this);
 t_ftlist_node	*ft_list_node_at(t_ftlist *this, size_t index);
 void			*ft_list_value_at(t_ftlist *this, size_t index);
 
+void			ft_list_iter(t_ftlist *this, void (*f)(void *));
+
 #endif // FT_LIST_H
