@@ -18,6 +18,11 @@ SRCS =  \
 		srcs/ft_list/ft_list_insert.c \
 		srcs/ft_list/ft_list_new.c \
 		srcs/ft_list/ft_list_remove.c \
+		srcs/ft_frwlist/ft_frwlist_at.c \
+		srcs/ft_frwlist/ft_frwlist_delete.c \
+		srcs/ft_frwlist/ft_frwlist_insert.c \
+		srcs/ft_frwlist/ft_frwlist_new.c \
+		srcs/ft_frwlist/ft_frwlist_remove.c \
 
 LIBS =	\
 		-lft \
