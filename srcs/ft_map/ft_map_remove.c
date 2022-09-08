@@ -38,7 +38,7 @@ void	*ft_map_remove(t_ftmap *this, const char *key)
 	while (list_node)
 	{
 		node = list_node->value;
-		if (ft_strcmp(node->value, key) == 0)
+		if (ft_strcmp(node->key, key) == 0)
 			break ;
 		list_node = list_node->next;
 		index++;
@@ -46,5 +46,6 @@ void	*ft_map_remove(t_ftmap *this, const char *key)
 	if (!list_node)
 		return (NULL);
 	ft_frwlist_remove_at(bucket, index);
+	this->size--;
 	return (free_node(node));
 }

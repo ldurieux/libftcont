@@ -51,7 +51,7 @@ static void	iter_node_bucket(t_ftfrwlist *bucket, void (*f)(char *, void *))
 	}
 }
 
-void			ft_map_iter_node(t_ftmap *this, void (*f)(char *, void *))
+void	ft_map_iter_node(t_ftmap *this, void (*f)(char *, void *))
 {
 	size_t		index;
 
